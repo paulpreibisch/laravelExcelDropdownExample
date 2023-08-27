@@ -8,12 +8,12 @@ use App\Exports\Excel\DogWorkbook;
 use Illuminate\Support\Facades\App;
 use Maatwebsite\Excel\Facades\Excel;
 
-class DogController extends Controller
+class AnimalController extends Controller
 {
-    public function downloadDogTemplate()
+    public function downloadAnimalsTemplate()
     {
-        $dogWorkbook = App::make(DogWorkbook::class);
-        return Excel::download($dogWorkbook, 'DogImportTemplate.xlsx');
+        $animalsWorkbook = App::make(AnimalsWorkbook::class);
+        return Excel::download($animalsWorkbook, 'AnimalsImportTemplate.xlsx');
     }
 
 }

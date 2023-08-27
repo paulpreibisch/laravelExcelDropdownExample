@@ -11,7 +11,7 @@ use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 
 class DogSheet implements FromCollection, WithHeadingRow, WithStyles, WithTitle
 {
-    const SHEET_TITLE = 'Dogs';
+    public const SHEET_TITLE = 'Dogs';
 
     public function collection()
     {
@@ -51,7 +51,7 @@ class DogSheet implements FromCollection, WithHeadingRow, WithStyles, WithTitle
         $validation->setError('Value is not in list.');
         $validation->setPromptTitle('Pick from list');
         $validation->setPrompt('Please pick a value from the drop-down list.');
-        $validation->setFormula1( '\'' . DogTypesSheet::SHEET_TITLE . '\'!$A$2:$A$10000');
+        $validation->setFormula1('\'' . DogTypesSheet::SHEET_TITLE . '\'!$A$2:$A$10000');
 
         $validation->setSqref("C1:C10000");
     }

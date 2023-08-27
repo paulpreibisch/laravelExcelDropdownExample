@@ -9,9 +9,9 @@ use Maatwebsite\Excel\Concerns\WithTitle;
 use PhpOffice\PhpSpreadsheet\Cell\DataValidation;
 use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 
-class DogTypesSheet implements FromCollection, WithHeadingRow, WithTitle
+class CatTypesSheet implements FromCollection, WithHeadingRow, WithTitle
 {
-    public const SHEET_TITLE = "Dog Types";
+    public const SHEET_TITLE = "Cat Types";
 
     public function collection()
     {
@@ -21,48 +21,36 @@ class DogTypesSheet implements FromCollection, WithHeadingRow, WithTitle
                     'Type'
                 ],
                 [
-                    'Airedale Terrier'
+                    'Persian'
                 ],
                 [
-                    'Akita'
+                    'British Longhair'
                 ],
                 [
-                    'Alaskan Malamute'
+                    'Donskoy'
                 ],
                 [
-                    'American Bulldog'
+                    'German Rex'
                 ],
                 [
-                    'American Bully (Standard)'
+                    'Himalayan'
                 ],
                 [
-                    'American Eskimo Dog (Miniature)'
+                    'Maine Coon'
                 ],
                 [
-                    'American Eskimo Dog (Standard)'
+                    'Manx'
                 ],
                 [
-                    'Am. Staffordshire Terrier'
+                    'Munchkin'
                 ],
                 [
-                    'American Pit Bull Terrier'
+                    'Russian Blue'
                 ],
                 [
-                    'Australian Cattle Dog (Heeler)'
+                    'Siamese Modern'
                 ],
-                [
-                    'Australian Kelpie'
-                ],
-                [
-                    'Australian Shepherd'
-                ],
-                [
-                    'Austrialian Terrier'
-                ],
-                [
-                    'Barbet'
-                ]
-                ]
+            ]
         );
     }
 

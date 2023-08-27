@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AnimalController;
 use App\Http\Controllers\DogController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,6 +20,10 @@ Route::get('/', function () {
 });
 
 Route::get(
-    '/dogs/downloadImportTemplate',
-    [DogController::class,'downloadImportTemplate']
+    '/dogs/downloadTemplate',
+    [DogController::class,'downloadDogTemplate']
+);
+Route::get(
+    '/animals/downloadTemplate',
+    [AnimalController::class,'downloadAnimalsTemplate']
 );
