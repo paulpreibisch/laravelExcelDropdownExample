@@ -27,7 +27,7 @@ class AnimalsSheet extends DefaultValueBinder implements WithCustomValueBinder, 
                 [
 
                     'name' => 'Midnight',
-                    'type' => 'cog',
+                    'type' => 'dog',
                     'breed' => ' '
                 ],
                 [
